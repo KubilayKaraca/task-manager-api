@@ -6,8 +6,8 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
 app.use(logger);
+app.use(express.json());
 app.use('/tasks', tasksRouter);
 
 app.use((req, res) => {
@@ -15,6 +15,9 @@ app.use((req, res) => {
 });
 
 app.use((err, req, res, next) => {
+    if (err.type === 'entity.parse.failed') {
+        return res.status(400).json({ message: 'Invalid JSON body', status: 'error' });
+    }
     console.error('Internal server error:', err);
     res.status(500).json({ message: 'Internal server error', status: 'error' });
 });
