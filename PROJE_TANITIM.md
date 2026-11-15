@@ -1,9 +1,9 @@
 # Proje Tanıtım Dokümanı — Task Manager API
 
-**Proje:** TaskFlow — Görev ve Proje Yönetim Sistemi API Geliştirme Projesi
-**Eğitim:** Node.js ile Backend Programlama — Bitirme Projesi
-**Hazırlayan:** Kubilay Karaca
-**Kaynak kod:** https://github.com/KubilayKaraca/task-manager-api
+- **Proje:** TaskFlow — Görev ve Proje Yönetim Sistemi API Geliştirme Projesi
+- **Eğitim:** Node.js ile Backend Programlama — Bitirme Projesi
+- **Hazırlayan:** Kubilay Karaca
+- **Kaynak kod:** https://github.com/KubilayKaraca/task-manager-api
 
 ---
 
